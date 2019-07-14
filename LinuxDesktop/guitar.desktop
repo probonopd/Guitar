@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Guitar
+Description=Graphical git client
+Categories=Development;
+Exec=guitar
+Icon=guitar
