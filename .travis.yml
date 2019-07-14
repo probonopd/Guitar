@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get update -qq
 
 install:
-  - sudo apt-get -y install qt59base qt59svg libgl1-mesa-dev libssl-dev zlib1g-dev ruby # openssl-1.1.x is not supported!
+  - sudo apt-get -y install qt59base qt59svg libgl1-mesa-dev libssl-dev zlib1g-dev lib32z1-dev ruby # openssl-1.1.x is not supported!
   - source /opt/qt*/bin/qt*-env.sh
 
 script:
