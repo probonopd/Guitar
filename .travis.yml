@@ -21,6 +21,8 @@ script:
   - mkdir -p appdir/usr/bin && cp _bin/Guitar appdir/usr/bin/guitar && chmod 644 appdir/usr/bin/guitar
   - mkdir -p appdir/usr/share/icons/hicolor/scalable/apps && cp LinuxDesktop/Guitar.svg appdir/usr/share/icons/hicolor/scalable/apps/guitar.svg
   - mkdir -p appdir/usr/share/applications && cp LinuxDesktop/guitar.desktop appdir/usr/share/applications/
+  - file appdir/usr/bin/guitar
+  - find appdir/
   - wget -c -nv "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage"
   - chmod a+x linuxdeployqt-continuous-x86_64.AppImage
   - ./linuxdeployqt-continuous-x86_64.AppImage appdir/usr/share/applications/*.desktop -appimage
